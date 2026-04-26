@@ -124,38 +124,51 @@
 				
 				<div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6">
 					<form action="https://formspree.io/f/meeeqewv" id="form-wrap" method="POST">
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="name">Your Name</label>
-								<input type="text" class="form-control" id="name">
-							</div>
+					  
+					  <div class="row form-group">
+						<div class="col-md-12">
+						  <label for="name">Your Name</label>
+						  <input type="text" class="form-control" id="name" name="name" required>
 						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="many">How Many People</label>
-								<select name="many" id="many" class="form-control custom_select">
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="6+">6+</option>
-								</select>
-							</div>
+					  </div>
+				  
+					  <!-- Phone Number Added -->
+					  <div class="row form-group">
+						<div class="col-md-12">
+						  <label for="phone">Phone Number</label>
+						  <input type="tel" class="form-control" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10 digit number">
 						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="taskdatetime">When</label>
-								<input type="text" name="task-datetime" id="taskdatetime" class="form-control"/>
-							</div>
+					  </div>
+				  
+					  <div class="row form-group">
+						<div class="col-md-12">
+						  <label for="many">How Many People</label>
+						  <select name="many" id="many" class="form-control custom_select" required>
+							<option value="">Select</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="6+">6+</option>
+						  </select>
 						</div>
-						<div class="row form-group">
-							<div class="col-md-12">
-								<input type="submit" class="btn btn-primary btn-outline btn-lg" value="Submit Form">
-							</div>
+					  </div>
+				  
+					  <div class="row form-group">
+						<div class="col-md-12">
+						  <label for="taskdatetime">When</label>
+						  <input type="text" name="task-datetime" id="taskdatetime" class="form-control" required>
 						</div>
-
+					  </div>
+				  
+					  <div class="row form-group">
+						<div class="col-md-12">
+						  <input type="submit" class="btn btn-primary btn-outline btn-lg" value="Submit Form">
+						</div>
+					  </div>
+				  
 					</form>
 				</div>
 				
